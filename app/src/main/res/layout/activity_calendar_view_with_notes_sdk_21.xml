@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="org.hugoandrade.calendarviewapp.CalendarViewWithNotesActivity">
+
+    <FrameLayout
+        android:id="@+id/BarraSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I.E.S"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="65sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText,VisualLintOverlap" />
+
+    </FrameLayout>
+
+    <org.hugoandrade.calendarviewlib.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        app:content_background_color="#fff"
+        app:current_day_circle_color="@color/colorRojoIES"
+        app:current_day_circle_enable="true"
+        app:day_text_color="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208"
+        app:month_header_show="true"
+        app:month_header_text_color="@color/colorRojoIES"
+        app:week_header_background_color="#fff"
+        app:week_header_movable="false"
+        app:week_header_text_color="@color/colorRojoIES"
+        app:selected_day_border_color="@color/colorRojoIES"
+        />
+
+    <View
+        android:id="@+id/BarraDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorRojoIES"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556"/>
+
+
+    <TextView
+        android:id="@+id/pendientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eventos pendientes este mes"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+
+    <FrameLayout
+
+        android:id="@+id/BarraInferior"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/barrainferior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BarraDescripcion"
+        app:layout_constraintVertical_bias="0.892">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:translationX="15dp"
+            android:translationY="20dp"
+            app:srcCompat="@drawable/icons8_campana_48"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:translationY="20dp"
+            android:translationX="315dp"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/icons8_usuario_60"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            />
+
+    </FrameLayout>
+
+   <!-- <Button
+        android:id="@+id/fab"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/barrainferior"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:translationY="-40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BarraInferior"
+        tools:ignore="HardcodedText,TextSizeCheck" /> -->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/colorRojoIES"
+        android:tint="#fff"
+        app:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.882"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+
+</android.support.constraint.ConstraintLayout>
