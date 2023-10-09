@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/one_day_before"
+        android:title="1 Dia antes" />
+    <item
+        android:id="@+id/two_days_before"
+        android:title="2 Dias antes" />
+    <item
+        android:id="@+id/three_days_before"
+        android:title="3 Dias antes" />
+    <item
+        android:id="@+id/four_days_before"
+        android:title="4 Dias antes" />
+    <item
+        android:id="@+id/five_days_before"
+        android:title="5 Dias antes" />
+    <item
+        android:id="@+id/six_days_before"
+        android:title="6 Dias antes" />
+    <item
+        android:id="@+id/seven_days_before"
+        android:title="7 Dias antes" />
+    <item
+        android:id="@+id/selected_days_before"
+        android:title="Seleccionar dias" />
+    <!-- Agrega más elementos de menú para las otras opciones aquí -->
+</menu>

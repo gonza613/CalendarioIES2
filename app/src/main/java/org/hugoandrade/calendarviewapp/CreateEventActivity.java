@@ -16,8 +16,10 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.PopupMenu;
 import android.widget.Switch;
 import android.widget.TextView;
 
@@ -145,6 +147,60 @@ public class CreateEventActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Button seleccionNotificacionButton = findViewById(R.id.seleccionNotificacion);
+        seleccionNotificacionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                PopupMenu popupMenu = new PopupMenu(CreateEventActivity.this, view);
+                popupMenu.getMenuInflater().inflate(R.menu.notification_menu, popupMenu.getMenu());
+
+                // Manejar la selección de elementos del menú
+                popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                    @Override
+                    public boolean onMenuItemClick(MenuItem item) {
+                        switch (item.getItemId()) {
+                            case R.id.one_day_before:
+                                // Lógica para un día antes
+                                return true;
+
+                            case R.id.two_days_before:
+                                // Lógica para dos días antes
+                                return true;
+
+                            case R.id.three_days_before:
+                                // Lógica para tres días antes
+                                return true;
+
+                            case R.id.four_days_before:
+                                // Lógica para cuatro días antes
+                                return true;
+
+                            case R.id.five_days_before:
+                                // Lógica para cinco días antes
+                                return true;
+
+                            case R.id.six_days_before:
+                                // Lógica para seis días antes
+                                return true;
+
+                            case R.id.seven_days_before:
+                                // Lógica para siete días antes
+                                return true;
+
+                            case R.id.selected_days_before:
+                                // Lógica para días seleccionados
+                                return true;
+
+                            default:
+                                return false;
+                        }
+                    }
+                });
+
+                popupMenu.show();
+            }
+        });
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -311,4 +367,6 @@ public class CreateEventActivity extends AppCompatActivity {
     private static String generateID() {
         return Long.toString(System.currentTimeMillis());
     }
+
+
 }

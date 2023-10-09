@@ -109,12 +109,12 @@
             android:layout_height="40dp"
             android:adjustViewBounds="true"
             android:background="@android:color/transparent"
+            android:importantForAccessibility="no"
             android:scaleType="fitXY"
             android:translationX="15dp"
             android:translationY="20dp"
             app:srcCompat="@drawable/icons8_campana_48"
-            tools:ignore="SpeakableTextPresentCheck"
-            android:importantForAccessibility="no" />
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <ImageButton
             android:id="@+id/imageButton"
