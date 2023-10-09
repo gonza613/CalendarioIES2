@@ -12,4 +12,5 @@
     <string name="event_default_title">O meu evento</string>
     <string name="no_events">Sem eventos ou tarefas</string>
     <string name="delete">eliminar</string>
+    <string name="pendiente">Eventos pendientes este mes</string>
 </resources>
