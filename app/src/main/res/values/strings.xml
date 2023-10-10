@@ -1,19 +1,19 @@
 <resources>
-    <string name="app_name" translatable="false">CalendarView Sample</string>
+    <string name="app_name" translatable="false">Calendario IES</string>
     <string name="title_activity_simple_calendar_view" translatable="false">Simple CalendarView</string>
     <string name="title_activity_mini_calendar_view_popup" translatable="false">CalendarView Popup</string>
-    <string name="today">today</string>
-    <string name="cancel">cancel</string>
+    <string name="today">Hoy</string>
+    <string name="cancel">Cancelar</string>
     <string name="ok">ok</string>
-    <string name="new_event">New Event</string>
-    <string name="save">save</string>
-    <string name="title">Title</string>
-    <string name="completed">Completed</string>
-    <string name="set">set</string>
+    <string name="new_event">Nuevo Evento</string>
+    <string name="save">Guardar</string>
+    <string name="title">Titulo</string>
+    <string name="completed">Completado</string>
+    <string name="set">Guardar</string>
     <string name="double_dots" translatable="false">:</string>
-    <string name="select_color_instruction">Select color of event</string>
-    <string name="event_default_title">My event</string>
-    <string name="no_events">no events</string>
-    <string name="delete">delete</string>
+    <string name="select_color_instruction">Selecciona el color del evento</string>
+    <string name="event_default_title">Mi evento</string>
+    <string name="no_events">No eventos</string>
+    <string name="delete">Borrar</string>
     <string name="pendiente">Eventos pendientes este mes</string>
 </resources>

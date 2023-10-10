@@ -44,15 +44,20 @@
                 android:value="org.hugoandrade.calendarviewapp.MainActivity" />
         </activity>
         <activity
-            android:name=".CalendarViewWithNotesActivitySDK21"
-            android:parentActivityName=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
+        <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".CalendarViewWithNotesActivitySDK21"
+            android:parentActivityName=".MainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="org.hugoandrade.calendarviewapp.MainActivity" />
