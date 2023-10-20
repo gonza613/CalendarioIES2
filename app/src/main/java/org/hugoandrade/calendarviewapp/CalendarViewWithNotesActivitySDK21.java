@@ -14,6 +14,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import org.hugoandrade.calendarviewapp.data.Event;
 import org.hugoandrade.calendarviewapp.uihelpers.CalendarDialog;
@@ -25,7 +26,6 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Objects;
 
-@RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class CalendarViewWithNotesActivitySDK21 extends AppCompatActivity {
 
     private final static int CREATE_EVENT_REQUEST_CODE = 100;
@@ -53,8 +53,7 @@ public class CalendarViewWithNotesActivitySDK21 extends AppCompatActivity {
 
         setContentView(R.layout.activity_calendar_view_with_notes_sdk_21);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+
 
 
         mCalendarView = findViewById(R.id.calendarView);
@@ -94,6 +93,13 @@ public class CalendarViewWithNotesActivitySDK21 extends AppCompatActivity {
             getSupportActionBar().setSubtitle(Integer.toString(year));
         }
 
+        ImageButton listEvent= findViewById(R.id.imageButton2);
+        listEvent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openNearestEventDate();
+            }
+        });
         Button fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,6 +107,9 @@ public class CalendarViewWithNotesActivitySDK21 extends AppCompatActivity {
                 createEvent(mCalendarView.getSelectedDate());
             }
         });
+
+
+
 
         mCalendarDialog = CalendarDialog.Builder.instance(this)
                 .setEventList(mEventList)
@@ -223,6 +232,34 @@ public class CalendarViewWithNotesActivitySDK21 extends AppCompatActivity {
                 event.getDate(),
                 event.getColor(),
                 event.isCompleted() ? Color.TRANSPARENT : Color.RED);
+    }
+
+    private void openNearestEventDate() {
+        Calendar currentDate = mCalendarView.getCurrentDate();
+        Calendar nearestEventDate = findNearestEventDate(currentDate);
+
+        if (nearestEventDate != null) {
+            // Abre la fecha más cercana con un evento, por ejemplo, muestra el diálogo.
+            mCalendarDialog.setSelectedDate(nearestEventDate);
+            mCalendarDialog.show();
+        }
+    }
+
+    private Calendar findNearestEventDate(Calendar currentDate) {
+        Calendar nearestEventDate = null;
+        long minTimeDifference = Long.MAX_VALUE;
+
+        for (Event event : mEventList) {
+            Calendar eventDate = event.getDate();
+            long timeDifference = Math.abs(eventDate.getTimeInMillis() - currentDate.getTimeInMillis());
+
+            if (timeDifference < minTimeDifference) {
+                minTimeDifference = timeDifference;
+                nearestEventDate = eventDate;
+            }
+        }
+
+        return nearestEventDate;
     }
 
 }

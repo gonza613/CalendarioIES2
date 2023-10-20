@@ -14,7 +14,6 @@
         android:id="@+id/textViewRegristro2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:clickable="true"
         android:text="Instituto de Estudios Superiores"
         android:textColor="@color/white"
         android:textStyle="bold"
@@ -105,6 +104,7 @@
         app:layout_constraintHorizontal_bias="0.500"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.750" />
+        app:layout_constraintVertical_bias="0.750"
+        android:focusable="true" />
 
 </android.support.constraint.ConstraintLayout>

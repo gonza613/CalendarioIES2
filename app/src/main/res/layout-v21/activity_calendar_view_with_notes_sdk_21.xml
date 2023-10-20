@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context="org.hugoandrade.calendarviewapp.CalendarViewWithNotesActivity">
+    tools:context="org.hugoandrade.calendarviewapp.CalendarViewWithNotesActivitySDK21">
 
     <FrameLayout
         android:id="@+id/BarraSuperior"
@@ -113,6 +113,8 @@
             android:scaleType="fitXY"
             android:translationX="15dp"
             android:translationY="20dp"
+            android:clickable="true"
+            android:focusable="true"
             app:srcCompat="@drawable/icons8_campana_48"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
