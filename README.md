@@ -16,4 +16,12 @@ Nota: No podemos encontrar el error que al descargar el proyecto desde GitHub, o
 
 Pero deberia ser asi
 
+![](https://github.com/gonza613/CalendarioIES2/blob/master/art/InicioSesion.PNG)
+
+![](https://github.com/gonza613/CalendarioIES2/blob/master/art/PantallaPrincipal.PNG)
+
+![](https://github.com/gonza613/CalendarioIES2/blob/master/art/AgregarEvento.PNG)
+
+![](https://github.com/gonza613/CalendarioIES2/blob/master/art/Campana.PNG)
+
 ## XML Attributes
