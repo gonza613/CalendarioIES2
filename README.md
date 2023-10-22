@@ -24,6 +24,6 @@ Pero deberia ser asi
 
 ![](https://github.com/gonza613/CalendarioIES2/blob/master/art/Campana.PNG)
 
-De todas maneras, podemos pasarte el apk por Whatsapp (Es la aplicacion con las activitys que SI deberian aparecer), ya que la carpeta donde debe estar (app/build/outputs/apk/debug) no aparece en Git.
+De todas maneras esta el apk, que si funciona como deberia ser.
 
 ## XML Attributes
