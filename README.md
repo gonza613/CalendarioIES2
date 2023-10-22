@@ -1,12 +1,8 @@
-# CalendarView
+# Calendario IES
 
-CalendarView is a calendar widget for displaying and selecting dates, and for adding and selecting events from specific dates.
+Calendario IES es un calendario ideado por y para alumnos del instituto IES.
 
-The appearance of this widget is configurable (more specifications below). The user can interact with it by tapping on the desired date and scrolling/flinging the calendar to the desired date.
-
-The CalendarView widget is wrapped in a Android Library module and can be included in one's project by including it as a dependency.
-
-An Android app was developed to show a few use-cases of the this widget and it can be watched [here](https://www.youtube.com/watch?v=YHEubAQNBcs).
+Nota: No podemos encontrar el error que al descargar el proyecto desde GitHub, o incluso copiando y pegando simplemente el archivo, al ejecutarlo en el emulador, abre otras activities, creemos que puede ser un error por el sdk, pero no sabemos como solucionarlo. Probablemente le aparezca la aplicacion asi
 
 ## Screenshots
 
@@ -17,5 +13,7 @@ An Android app was developed to show a few use-cases of the this widget and it c
 ![](https://github.com/hugomfandrade/CalendarView-Widget/blob/master/art/CalendarView_mini_popup.gif?raw=true)
 
 ![](https://github.com/hugomfandrade/CalendarView-Widget/blob/master/art/CalendarView_with_events.gif?raw=true)
+
+Pero deberia ser asi
 
 ## XML Attributes
