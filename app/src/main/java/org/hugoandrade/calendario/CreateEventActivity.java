@@ -1,4 +1,4 @@
-package org.hugoandrade.calendarviewapp;
+package org.hugoandrade.calendario;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -23,8 +23,9 @@ import android.widget.PopupMenu;
 import android.widget.Switch;
 import android.widget.TextView;
 
-import org.hugoandrade.calendarviewapp.data.Event;
-import org.hugoandrade.calendarviewapp.utils.ColorUtils;
+import org.hugoandrade.calendario.data.Event;
+import org.hugoandrade.calendarviewapp.R;
+import org.hugoandrade.calendario.utils.ColorUtils;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

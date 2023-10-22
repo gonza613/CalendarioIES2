@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1010678839495",
+    "project_id": "calendarioies-4a6d2",
+    "storage_bucket": "calendarioies-4a6d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010678839495:android:6e37c7d2bf6f3b0d5426e2",
+        "android_client_info": {
+          "package_name": "org.hugoandrade.calendarviewapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIG3vZaEZ3aeAIRDEForsmXNWmPncJnxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

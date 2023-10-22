@@ -1,4 +1,4 @@
-package org.hugoandrade.calendarviewapp;
+package org.hugoandrade.calendario;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,8 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 
-import org.hugoandrade.calendarviewapp.uihelpers.NumberPicker;
 import org.hugoandrade.calendarviewlib.CalendarView;
+import org.hugoandrade.calendarviewapp.R;
+import org.hugoandrade.calendario.uihelpers.NumberPicker;
 
 import java.util.Calendar;
 import java.util.List;

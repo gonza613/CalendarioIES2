@@ -9,42 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
 
-        </activity>
         <activity
-            android:name=".SimpleCalendarViewActivity"
-            android:label="@string/title_activity_simple_calendar_view"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.hugoandrade.calendarviewapp.MainActivity" />
-        </activity>
-        <activity
-            android:name=".ToolbarCalendarViewActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".MiniCalendarViewPopupActivity"
-            android:label="@string/title_activity_mini_calendar_view_popup"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.hugoandrade.calendarviewapp.MainActivity" />
-        </activity>
-        <activity
-            android:name=".CalendarViewWithNotesActivity"
-            android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.hugoandrade.calendarviewapp.MainActivity" />
-        </activity>
-        <activity
-            android:name=".LoginActivity"
+            android:name="org.hugoandrade.calendario.LoginActivity"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar">
         <intent-filter>
@@ -53,31 +20,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".CalendarViewWithNotesActivitySDK21"
-            android:parentActivityName=".MainActivity"
+            android:name="org.hugoandrade.calendario.CalendarViewWithNotesActivitySDK21"
             android:exported="true"
             android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.hugoandrade.calendarviewapp.MainActivity" />
         </activity>
+
         <activity
-            android:name=".CreateEventActivity"
-            android:parentActivityName=".CalendarViewWithNotesActivitySDK21"
+            android:name="org.hugoandrade.calendario.CreateEventActivity"
             android:theme="@style/AppTheme.NoActionBar">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.hugoandrade.calendarviewapp.CalendarViewWithNotesActivitySDK21" />
         </activity>
+
         <activity
-            android:name=".SelectDateAndTimeActivity"
-            android:parentActivityName=".CreateEventActivity"
+            android:name="org.hugoandrade.calendario.SelectDateAndTimeActivity"
             android:theme="@style/AppTheme.NoActionBar.Transition">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="org.hugoandrade.calendarviewapp.CreateEventActivity" />
         </activity>
+
     </application>
 
 </manifest>

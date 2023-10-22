@@ -1,4 +1,4 @@
-package org.hugoandrade.calendarviewapp.data;
+package org.hugoandrade.calendario.data;
 
 import android.os.Parcel;
 import android.os.Parcelable;

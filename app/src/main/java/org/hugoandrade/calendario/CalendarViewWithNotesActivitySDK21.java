@@ -1,10 +1,9 @@
-package org.hugoandrade.calendarviewapp;
+package org.hugoandrade.calendario;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.FloatingActionButton;
@@ -16,9 +15,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-import org.hugoandrade.calendarviewapp.data.Event;
-import org.hugoandrade.calendarviewapp.uihelpers.CalendarDialog;
+import org.hugoandrade.calendario.data.Event;
+import org.hugoandrade.calendario.uihelpers.CalendarDialog;
 import org.hugoandrade.calendarviewlib.CalendarView;
+import org.hugoandrade.calendarviewapp.R;
 
 import java.text.DateFormatSymbols;
 import java.util.ArrayList;

@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorRojoIES"
-    android:fitsSystemWindows="true"
-    tools:context="org.hugoandrade.calendario.LoginActivity">
+    >
 
 
     <TextView
@@ -48,15 +47,15 @@
         android:layout_height="wrap_content"
         android:background="@drawable/boton_redondo"
         android:ems="10"
-        android:inputType="text"
-        android:text="Dni"
+        android:hint="Correo electronico"
+        android:inputType="textEmailAddress"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.500"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.434"
+        app:layout_constraintVertical_bias="0.390"
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
@@ -65,24 +64,41 @@
         android:layout_height="wrap_content"
         android:background="@drawable/boton_redondo"
         android:ems="10"
+        android:hint="Contraseña"
         android:inputType="textVisiblePassword"
-        android:text="Contraseña"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.500"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.534"
+        app:layout_constraintVertical_bias="0.490"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextPasswordRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boton_redondo"
+        android:ems="10"
+        android:hint="Reingrese contraseña"
+        android:inputType="textVisiblePassword"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.590"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
-        android:id="@+id/botonIngresar"
+        android:id="@+id/botonRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:background="@drawable/boton_redondo"
         android:backgroundTint="#CF0B26"
-        android:text="Ingresar"
+        android:text="Registrarse"
         android:textAllCaps="false"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -90,14 +106,14 @@
         app:layout_constraintHorizontal_bias="0.500"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.650" />
+        app:layout_constraintVertical_bias="0.690" />
 
     <TextView
         android:id="@+id/textViewRegristro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:text="¿No estas regristrado? Haz click aqui."
+        android:text="¿Ya tienes una cuenta? Inicia sesion."
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,6 +121,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.750"
-        android:focusable="true" />
+        android:focusable="true"
+        />
 
 </android.support.constraint.ConstraintLayout>

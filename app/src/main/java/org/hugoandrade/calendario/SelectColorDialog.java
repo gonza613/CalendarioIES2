@@ -1,4 +1,4 @@
-package org.hugoandrade.calendarviewapp;
+package org.hugoandrade.calendario;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -11,7 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import org.hugoandrade.calendarviewapp.utils.ColorUtils;
+import org.hugoandrade.calendario.utils.ColorUtils;
+import org.hugoandrade.calendarviewapp.R;
 
 public class SelectColorDialog {
 

@@ -54,7 +54,7 @@
                 android:orientation="horizontal"
                 android:gravity="center">
 
-                <org.hugoandrade.calendarviewapp.uihelpers.NumberPicker
+                <org.hugoandrade.calendario.uihelpers.NumberPicker
                     android:id="@+id/np_hour"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -80,7 +80,7 @@
                     android:textColor="?attr/colorPrimary"
                     android:textSize="28sp" />
 
-                <org.hugoandrade.calendarviewapp.uihelpers.NumberPicker
+                <org.hugoandrade.calendario.uihelpers.NumberPicker
                     android:id="@+id/np_minute"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

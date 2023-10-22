@@ -1,4 +1,4 @@
-package org.hugoandrade.calendarviewapp.utils;
+package org.hugoandrade.calendario.utils;
 
 import android.graphics.Color;
 

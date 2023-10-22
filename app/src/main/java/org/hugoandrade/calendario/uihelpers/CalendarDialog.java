@@ -1,4 +1,4 @@
-package org.hugoandrade.calendarviewapp.uihelpers;
+package org.hugoandrade.calendario.uihelpers;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -22,7 +22,7 @@ import android.view.WindowManager;
 import android.widget.TextView;
 
 import org.hugoandrade.calendarviewapp.R;
-import org.hugoandrade.calendarviewapp.data.Event;
+import org.hugoandrade.calendario.data.Event;
 
 import java.text.DateFormat;
 import java.text.ParseException;

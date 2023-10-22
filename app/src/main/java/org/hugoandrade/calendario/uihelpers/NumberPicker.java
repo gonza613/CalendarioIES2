@@ -1,4 +1,4 @@
-package org.hugoandrade.calendarviewapp.uihelpers;
+package org.hugoandrade.calendario.uihelpers;
 
 import android.content.Context;
 import android.content.res.TypedArray;
