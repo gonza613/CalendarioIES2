@@ -37,6 +37,11 @@
             android:theme="@style/AppTheme.NoActionBar.Transition">
         </activity>
 
+        <activity
+            android:name="org.hugoandrade.calendario.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
     </application>
 
 </manifest>

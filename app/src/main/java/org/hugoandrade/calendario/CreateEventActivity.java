@@ -51,13 +51,14 @@ public class CreateEventActivity extends AppCompatActivity {
 
     private Calendar mCalendar;
     private String mTitle;
-    private boolean mIsComplete;
+    private String mComment;
     private int mColor;
 
     private boolean isViewMode = true;
 
     private EditText mTitleView;
-    private Switch mIsCompleteCheckBox;
+
+    private EditText mCommentView;
     private TextView mDateTextView;
     private CardView mColorCardView;
     private View mHeader;
@@ -131,14 +132,14 @@ public class CreateEventActivity extends AppCompatActivity {
             mCalendar.set(Calendar.MILLISECOND, 0);
             mColor = ColorUtils.mColors[0];
             mTitle = "";
-            mIsComplete = false;
+            mComment = "";
             isViewMode = false;
         }
         else {
             mCalendar = mOriginalEvent.getDate();
             mColor = mOriginalEvent.getColor();
             mTitle = mOriginalEvent.getTitle();
-            mIsComplete = mOriginalEvent.isCompleted();
+            mComment = mOriginalEvent.getComment();
             isViewMode = true;
         }
     }
@@ -270,15 +271,15 @@ public class CreateEventActivity extends AppCompatActivity {
         });
         mTitleView = findViewById(R.id.et_event_title);
         mTitleView.setText(mTitle);
-        mIsCompleteCheckBox = findViewById(R.id.checkbox_completed);
-        mIsCompleteCheckBox.setChecked(mIsComplete);
+        mCommentView = findViewById(R.id.et_event_comment);
+        mCommentView.setText(mComment);
 
         if (isViewMode) {
-            mIsCompleteCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            mCommentView.setOnFocusChangeListener(new View.OnFocusChangeListener() {
                 @Override
-                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                public void onFocusChange(View v, boolean hasFocus) {
                     setupEditMode();
-                    mIsCompleteCheckBox.setOnCheckedChangeListener(null);
+                    mCommentView.setOnFocusChangeListener(null);
                 }
             });
             mTitleView.setOnFocusChangeListener(new View.OnFocusChangeListener() {
@@ -330,13 +331,14 @@ public class CreateEventActivity extends AppCompatActivity {
         int action = mOriginalEvent != null ? ACTION_EDIT : ACTION_CREATE;
         String id = mOriginalEvent != null ? mOriginalEvent.getID() : generateID();
         String rawTitle = mTitleView.getText().toString().trim();
+        String rawComment = mCommentView.getText().toString().trim();
 
         mOriginalEvent = new Event(
                 id,
                 rawTitle.isEmpty() ? null : rawTitle,
                 mCalendar,
                 mColor,
-                mIsCompleteCheckBox.isChecked()
+                rawComment.isEmpty() ? null : rawComment
         );
 
 

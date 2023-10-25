@@ -142,20 +142,15 @@
                         android:paddingStart="4dp"
                         android:paddingEnd="4dp">
 
-                        <TextView
-                            android:id="@+id/tv_completed"
+                        <EditText
+                            android:id="@+id/et_event_comment"
                             android:layout_width="0dp"
                             android:layout_weight="1"
-                            android:text="@string/completed"
+                            android:hint="Comentario"
                             android:textColor="#252525"
                             android:paddingStart="6dp"
                             android:paddingEnd="6dp"
                             style="@style/createEventItemTextView" />
-
-                        <Switch
-                            android:id="@+id/checkbox_completed"
-                            android:layout_height="wrap_content"
-                            android:layout_width="wrap_content"/>
 
                     </LinearLayout>
 

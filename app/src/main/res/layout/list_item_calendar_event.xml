@@ -43,13 +43,22 @@
             tools:text="Exercise Plan" />
 
         <TextView
+            android:id="@+id/tv_calendar_event_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#252525"
+            android:textSize="13sp"
+            android:lines="2"
+            tools:text="Comment"/>
+
+        <TextView
             android:id="@+id/tv_calendar_event_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:lines="1"
             android:textColor="#979797"
             android:textSize="13sp"
-            android:lines="1"
-            tools:text="08:00"/>
+            tools:text="08:00" />
 
     </LinearLayout>
 

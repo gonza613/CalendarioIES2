@@ -472,8 +472,8 @@ public class CalendarView extends FrameLayout {
             // Total number of pages (between min and max date)
             NUMBER_OF_PAGES =
                     mMaxDate.month - mMinDate.month +
-                    12 * (mMaxDate.year - mMinDate.year) +
-                    1;
+                            12 * (mMaxDate.year - mMinDate.year) +
+                            1;
 
             // Total number of pages (between min and max date)
             int diffYear = mSelectedDate.year - mMinDate.year;
@@ -539,10 +539,10 @@ public class CalendarView extends FrameLayout {
             for (int i = 0 ; i < dayList.size() ; i++) {
                 YMDCalendar day = dayList.get(i);
                 onBindView(i,
-                           month,
-                           day,
-                           mObjectsByDayMap.get(getDateCode(day, 2), emptyEventList),
-                           viewList.get(i));
+                        month,
+                        day,
+                        mObjectsByDayMap.get(getDateCode(day, 2), emptyEventList),
+                        viewList.get(i));
             }
 
             mInstantiatedMonthViewList.put(getDateCode(month, 1), view);
@@ -784,7 +784,7 @@ public class CalendarView extends FrameLayout {
             List<View> dayViewList = new ArrayList<>();
 
             for (int id : dayViewIDs)
-                    dayViewList.add(monthView.findViewById(id));
+                dayViewList.add(monthView.findViewById(id));
 
             return dayViewList;
         }
@@ -891,11 +891,10 @@ public class CalendarView extends FrameLayout {
         private int mPrimaryColor;
         private int mSecondaryColor;
 
-        public CalendarObject(String id, Calendar datetime, int primaryColor, int secondaryColor) {
+        public CalendarObject(String id, Calendar datetime, int primaryColor) {
             mID = id;
             mDatetime = datetime;
             mPrimaryColor = primaryColor;
-            mSecondaryColor = secondaryColor;
         }
 
         public String getID() {

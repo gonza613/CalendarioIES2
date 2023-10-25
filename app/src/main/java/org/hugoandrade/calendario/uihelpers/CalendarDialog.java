@@ -326,9 +326,12 @@ public class CalendarDialog {
             Event event = mCalendarEvents.get(position);
 
             String defaultTitle = holder.itemView.getContext().getString(R.string.event_default_title);
+            String defaultComment = holder.itemView.getContext().getString(R.string.event_default_title);
             String title = event.getTitle() == null ? defaultTitle : event.getTitle();
+            String comment = event.getComment() == null ? defaultComment : event.getComment();
 
             holder.tvEventName.setText(title);
+            holder.tvEventComment.setText(comment);
             holder.rclEventIcon.setBackgroundColor(event.getColor());
             holder.tvEventStatus.setText(timeFormat.format(event.getDate().getTime()));
         }
@@ -342,11 +345,13 @@ public class CalendarDialog {
             View rclEventIcon;
             TextView tvEventName;
             TextView tvEventStatus;
+            TextView tvEventComment;
 
             ViewHolder(View view) {
                 super(view);
                 rclEventIcon = view.findViewById(R.id.rcl_calendar_event_icon);
                 tvEventName = view.findViewById(R.id.tv_calendar_event_name);
+                tvEventComment = view.findViewById(R.id.tv_calendar_event_comment);
                 tvEventStatus = view.findViewById(R.id.tv_calendar_event_status);
                 view.setOnClickListener(this);
             }

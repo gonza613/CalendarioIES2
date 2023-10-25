@@ -230,8 +230,7 @@ public class CalendarViewWithNotesActivitySDK21 extends AppCompatActivity {
         return new CalendarView.CalendarObject(
                 event.getID(),
                 event.getDate(),
-                event.getColor(),
-                event.isCompleted() ? Color.TRANSPARENT : Color.RED);
+                event.getColor());
     }
 
     private void openNearestEventDate() {
@@ -263,3 +262,4 @@ public class CalendarViewWithNotesActivitySDK21 extends AppCompatActivity {
     }
 
 }
+
