@@ -1,0 +1,4 @@
+#Tue Oct 24 23:41:53 ART 2023
+base.0=C\:\\Users\\Gonza\\AndroidStudioProjects\\CalendarView-Widget-master\\app-remote\\build\\intermediates\\dex\\debugAndroidTest\\mergeDexDebugAndroidTest\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

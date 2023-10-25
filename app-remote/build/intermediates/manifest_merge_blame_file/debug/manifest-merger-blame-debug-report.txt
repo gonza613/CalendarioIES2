@@ -1,0 +1,160 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.hugoandrade.calendarviewtest"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="18"
+8-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="26" />
+9-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:5:5-74:19
+12        android:allowBackup="true"
+12-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:6:9-35
+13        android:debuggable="true"
+14        android:icon="@mipmap/ic_launcher"
+14-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:7:9-43
+15        android:label="@string/app_name"
+15-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:8:9-41
+16        android:roundIcon="@mipmap/ic_launcher_round"
+16-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:9:9-54
+17        android:supportsRtl="true"
+17-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:10:9-35
+18        android:theme="@style/AppTheme" >
+18-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:11:9-40
+19        <activity
+19-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:12:9-20:20
+20            android:name="org.hugoandrade.calendarviewtest.MainActivity"
+20-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:13:13-41
+21            android:theme="@style/AppTheme.NoActionBar" >
+21-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:14:13-56
+22            <intent-filter>
+22-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:15:13-19:29
+23                <action android:name="android.intent.action.MAIN" />
+23-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:16:17-69
+23-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:16:25-66
+24
+25                <category android:name="android.intent.category.LAUNCHER" />
+25-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:18:17-77
+25-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:18:27-74
+26            </intent-filter>
+27        </activity>
+28        <activity
+28-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:21:9-29:20
+29            android:name="org.hugoandrade.calendarviewtest.SimpleCalendarViewActivity"
+29-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:22:13-55
+30            android:label="@string/title_activity_simple_calendar_view"
+30-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:23:13-72
+31            android:parentActivityName="org.hugoandrade.calendarviewtest.MainActivity"
+31-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:24:13-55
+32            android:theme="@style/AppTheme.NoActionBar" >
+32-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:25:13-56
+33            <meta-data
+33-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:26:13-28:81
+34                android:name="android.support.PARENT_ACTIVITY"
+34-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:27:17-63
+35                android:value="org.hugoandrade.calendarviewtest.MainActivity" />
+35-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:28:17-78
+36        </activity>
+37        <activity
+37-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:30:9-32:59
+38            android:name="org.hugoandrade.calendarviewtest.ToolbarCalendarViewActivity"
+38-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:31:13-56
+39            android:theme="@style/AppTheme.NoActionBar" />
+39-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:32:13-56
+40        <activity
+40-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:33:9-41:20
+41            android:name="org.hugoandrade.calendarviewtest.MiniCalendarViewPopupActivity"
+41-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:34:13-58
+42            android:label="@string/title_activity_mini_calendar_view_popup"
+42-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:35:13-76
+43            android:parentActivityName="org.hugoandrade.calendarviewtest.MainActivity"
+43-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:36:13-55
+44            android:theme="@style/AppTheme.NoActionBar" >
+44-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:37:13-56
+45            <meta-data
+45-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:26:13-28:81
+46                android:name="android.support.PARENT_ACTIVITY"
+46-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:27:17-63
+47                android:value="org.hugoandrade.calendarviewtest.MainActivity" />
+47-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:28:17-78
+48        </activity>
+49        <activity
+49-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:42:9-49:20
+50            android:name="org.hugoandrade.calendarviewtest.CalendarViewWithNotesActivity"
+50-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:43:13-58
+51            android:parentActivityName="org.hugoandrade.calendarviewtest.MainActivity"
+51-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:44:13-55
+52            android:theme="@style/AppTheme.NoActionBar" >
+52-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:45:13-56
+53            <meta-data
+53-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:26:13-28:81
+54                android:name="android.support.PARENT_ACTIVITY"
+54-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:27:17-63
+55                android:value="org.hugoandrade.calendarviewtest.MainActivity" />
+55-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:28:17-78
+56        </activity>
+57        <activity
+57-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:50:9-57:20
+58            android:name="org.hugoandrade.calendarviewtest.CalendarViewWithNotesActivitySDK21"
+58-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:51:13-63
+59            android:parentActivityName="org.hugoandrade.calendarviewtest.MainActivity"
+59-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:52:13-55
+60            android:theme="@style/AppTheme.NoActionBar" >
+60-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:53:13-56
+61            <meta-data
+61-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:26:13-28:81
+62                android:name="android.support.PARENT_ACTIVITY"
+62-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:27:17-63
+63                android:value="org.hugoandrade.calendarviewtest.MainActivity" />
+63-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:28:17-78
+64        </activity>
+65        <activity
+65-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:58:9-65:20
+66            android:name="org.hugoandrade.calendarviewtest.CreateEventActivity"
+66-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:59:13-48
+67            android:parentActivityName="org.hugoandrade.calendarviewtest.CalendarViewWithNotesActivitySDK21"
+67-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:60:13-77
+68            android:theme="@style/AppTheme.NoActionBar" >
+68-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:61:13-56
+69            <meta-data
+69-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:26:13-28:81
+70                android:name="android.support.PARENT_ACTIVITY"
+70-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:27:17-63
+71                android:value="org.hugoandrade.calendarviewtest.CalendarViewWithNotesActivitySDK21" />
+71-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:28:17-78
+72        </activity>
+73        <activity
+73-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:66:9-73:20
+74            android:name="org.hugoandrade.calendarviewtest.SelectDateAndTimeActivity"
+74-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:67:13-54
+75            android:parentActivityName="org.hugoandrade.calendarviewtest.CreateEventActivity"
+75-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:68:13-62
+76            android:theme="@style/AppTheme.NoActionBar.Transition" >
+76-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:69:13-67
+77            <meta-data
+77-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:26:13-28:81
+78                android:name="android.support.PARENT_ACTIVITY"
+78-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:27:17-63
+79                android:value="org.hugoandrade.calendarviewtest.CreateEventActivity" />
+79-->C:\Users\Gonza\AndroidStudioProjects\CalendarView-Widget-master\app-remote\src\main\AndroidManifest.xml:28:17-78
+80        </activity>
+81
+82        <meta-data
+82-->[com.android.support:design:26.1.0] C:\Users\Gonza\.gradle\caches\transforms-3\cc941d20f41ada364fca2ce2116887cc\transformed\design-26.1.0\AndroidManifest.xml:26:9-28:38
+83            android:name="android.support.VERSION"
+83-->[com.android.support:design:26.1.0] C:\Users\Gonza\.gradle\caches\transforms-3\cc941d20f41ada364fca2ce2116887cc\transformed\design-26.1.0\AndroidManifest.xml:27:13-51
+84            android:value="26.1.0" />
+84-->[com.android.support:design:26.1.0] C:\Users\Gonza\.gradle\caches\transforms-3\cc941d20f41ada364fca2ce2116887cc\transformed\design-26.1.0\AndroidManifest.xml:28:13-35
+85        <meta-data
+85-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Gonza\.gradle\caches\transforms-3\6dd4620f46264900311fa88f6214e2e2\transformed\runtime-1.0.0\AndroidManifest.xml:25:9-27:47
+86            android:name="android.arch.lifecycle.VERSION"
+86-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Gonza\.gradle\caches\transforms-3\6dd4620f46264900311fa88f6214e2e2\transformed\runtime-1.0.0\AndroidManifest.xml:26:13-58
+87            android:value="27.0.0-SNAPSHOT" />
+87-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\Gonza\.gradle\caches\transforms-3\6dd4620f46264900311fa88f6214e2e2\transformed\runtime-1.0.0\AndroidManifest.xml:27:13-44
+88    </application>
+89
+90</manifest>
